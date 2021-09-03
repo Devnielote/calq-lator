@@ -365,10 +365,10 @@
 
 @font-face {
 	font-family: 'Roboto';
-	src:  url('../assets/fonts/Roboto-Regular.woff')format('woff'),
-		    url('../assets/fonts/Roboto-Bold.woff')format('woff'),
-        url('../assets/fonts/Roboto-Light.woff')format('woff'),
-        url('../assets/fonts/Roboto-Thin.woff')format('woff');
+	src:  url('./assets/fonts/Roboto-Regular.woff')format('woff'),
+		    url('./assets/fonts/Roboto-Bold.woff')format('woff'),
+        url('./assets/fonts/Roboto-Light.woff')format('woff'),
+        url('./assets/fonts/Roboto-Thin.woff')format('woff');
   }
 
 *{
@@ -679,31 +679,31 @@ footer h4 {
 }
 
 .figura {
-  background-image: url('../assets/images/figura.svg');
+  background-image: url('./assets/images/figura.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 15rem;
 }
 .moda {
-  background-image: url('../assets/images/moda.svg');
+  background-image: url('./assets/images/moda.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 15rem;
 }
 .descuento {
-  background-image: url('../assets/images/descuento.svg');
+  background-image: url('./assets/images/descuento.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 15rem;
 }
 .salario {
-  background-image: url('../assets/images/salario.svg');
+  background-image: url('./assets/images/salario.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 15rem;
 }
 .capacidad {
-  background-image: url('../assets/images/capacidad.svg');
+  background-image: url('./assets/images/capacidad.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 15rem;
