@@ -32,15 +32,15 @@
                 //-5% FC = 1 - (5/100) = 0.95.
                 //2.128896
 
-const calcularMediaGeometrica = (lista) => {
-    const factorCrecimiennto = lista.map((numero) => {
-        return numero / 100 + 1 
-    });
-    const productoPorcentajes = factorCrecimiennto.reduce((valorActual=0, acumulador) => {
-        return valorActual * acumulador;
-    });
-    const mediaGeometrica = (productoPorcentajes**(1/factorCrecimiennto.length)).toFixed(2);
-    const result = Math.floor((mediaGeometrica - 1) * 100);
-    console.log(`La media geometrica es igual ${mediaGeometrica} lo que expresado en porcentaje sería ${result}%`);
-}
-calcularMediaGeometrica([20,15,33,25]);
+                const calcularMediaGeometrica = (lista) => {
+                    const factorCrecimiennto = lista.map((numero) => {
+                        return numero / 100 + 1 
+                    });
+                    const productoPorcentajes = factorCrecimiennto.reduce((valorActual=0, acumulador) => {
+                        return valorActual * acumulador;
+                    });
+                    const mediaGeometrica = (productoPorcentajes**(1/factorCrecimiennto.length)).toFixed(2);
+                    const result = Math.floor((mediaGeometrica - 1) * 100);
+                    console.log(`La media geometrica es igual ${mediaGeometrica} lo que expresado en porcentaje sería ${result}%`);
+                }
+                calcularMediaGeometrica([20,15,33,25]);

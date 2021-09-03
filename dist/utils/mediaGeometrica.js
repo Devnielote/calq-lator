@@ -1,0 +1,1 @@
+const calcularMediaGeometrica=e=>{const a=e.map((e=>e/100+1)),o=(a.reduce(((e=0,a)=>e*a))**(1/a.length)).toFixed(2),c=Math.floor(100*(o-1));console.log(`La media geometrica es igual ${o} lo que expresado en porcentaje sería ${c}%`)};calcularMediaGeometrica([20,15,33,25]);

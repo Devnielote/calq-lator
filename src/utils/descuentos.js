@@ -3,24 +3,6 @@
 
 //Array de los cupones
 
-const coupons = [
-    {
-        name:'cupon1',
-        discount: 100
-    },
-
-    {
-        name:'cupon2',
-        discount: 200
-    },
-
-    {
-        name:'cupon3',
-        discount: 300
-    }
-]
-
-
 const calculoDescuento = (precio,descuento) => {
     const valor = Number(precio);
     const porcentaje = Number(descuento);
