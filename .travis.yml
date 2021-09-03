@@ -1,10 +1,10 @@
 lenguague
 language: node_js
-cache:
+-cache:
   directories:
     - ~/.npm
 node_js:
-  - "12"
+  - "node"
 git:
   depth: 3
 script:
@@ -19,4 +19,4 @@ deploy:
   target-branch: gh-pages
   commit_message: "Deploy Release"
   on:
-    branch: master
+    branch: main
