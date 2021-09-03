@@ -1,0 +1,53 @@
+.navbar {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar__logo {
+    margin-inline-end: 3rem;
+    font-size: 1.8rem;
+  }
+  
+  .navbar__contact a {
+    font-size: 1.6rem;
+  }
+  
+.home__sections {
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.intro {
+    align-items: center;
+}
+
+
+.intro h1 {
+    margin-inline-start: 3rem;
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+    text-align: center;
+}
+
+.linkArea h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+
+.links {
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+}
+
+.link {
+    margin-inline: 1rem;
+}
+
+.form__container h3 {
+    font-size: 2rem;
+}
