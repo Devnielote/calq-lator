@@ -20,19 +20,41 @@ module.exports = {
                     loader: "babel-loader"
                 }
             },
+            
             {
-                test: /\.css$/,
+              test: /\.css$/i,
+              use: ['style-loader', 'css-loader'],
+            },
+
+            {
+                test: /\.jpg/,
+                type: 'asset/resource'
+            },
+            {
+                test: /\.svg$/,
                 use: [
-                    'style-loader',
-                    {
-                        loader:'css-loader',
-                        options: {
-                            importLoaders: 1
-                        } 
+                  {
+                    loader: 'svg-url-loader',
+                    options: {
+                      limit: 10000,
                     },
-                    'postcss-loader'
-                ]
-            }
+                  },
+                ],
+              },
+              {
+                test:/\.(woff|woff2)$/,
+                use: {
+                    loader: "url-loader",
+                    options: {
+                        limit: 10000,
+                        mimetype: "aplication/font-woff",
+                        name: "[name].[ext]",
+                        outputPath: "./assets/fonts/",
+                        publicPath: "./assets/fonts/",
+                        esModule: false,
+                    }
+                }
+              },
         ]
     },
 
@@ -48,6 +70,18 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [{ from: './src/styles/styles.css',
             to: '' }],
-          })
+          }),
+        new CopyWebpackPlugin({
+            patterns: [{ from: './src/styles/tablet.css',
+            to: '' }],
+          }),
+        new CopyWebpackPlugin({
+            patterns: [{ from: './src/styles/desktop.css',
+            to: '' }],
+          }),
+        new CopyWebpackPlugin({
+            patterns: [{ from: path.resolve(__dirname,"src","assets/fonts"),
+            to: 'assets/fonts' }],
+          }),
     ]
 }

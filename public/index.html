@@ -1,76 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Figuras geometricas</title>
-    <link rel="stylesheet" href="../src//styles/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALQ 🧮</title>
+    <link rel="stylesheet" href="../src/styles/styles.css">
+    <link rel="stylesheet" href="../src/styles/tablet.css" media="(min-width: 760px">
+    <link rel="stylesheet" href="../src/styles/desktop.css" media="(min-width: 1024px">
 </head>
 <body>
-    <main class="container">
-        <nav class="navbar">
-            <div class="navbar__logo">
-                <h1> CALQ🧮 </h1>
-            </div>
-        </nav>
-        <header class="header">
-            <div class="header__container">
-                <div class="header__title">
-                    <h2>Figuras geometricas</h2>
-                </div>
-                <div class="header__subtitle">
-                    <h2>Primer taller del curso💻</h2>
-                </div>
-            </div>
+    <main class='Main'>
+        <header class="Header" id="header"> 
         </header>
-        <section class="cuadrado __container">
-                <h3>Formulas para el cuadrado</h3>
-                <form action="">
-                    <label for="InputCuadrado">Escribe las medidas de tu cuadrado:</label>
-                    <input type="number" id="InputCuadrado" placeholder="Lado en cm">
-                    <div class="input__button">
-                        <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
-                        <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
-                    </div>
-                </form>
+        <section id="content">
         </section>
-
-         <section class="triangulo __container">
-            <h3>Formulas para el triangulo</h3>
-            <form action="">
-                <label for="angulo1">Escribe las medidas de tu triangulo:</label>
-                <input type="number" id="lado1" placeholder="Lado no.1">
-                <input type="number" id="lado2" placeholder="Lado no.2">
-                <input type="number" id="base" placeholder="Base">
-                <div class="input__button">
-                    <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perimetro</button>
-                </div>
-                <input type="number" id="alturaTriangulo" placeholder="Altura">
-                <div class="input__button">
-                    <button type="button" onclick="calcularAlturaIsoscelesDos()">Calcular altura</button>
-                    <button type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
-                </div>
-            </form>
-        </section>
-
-
-        <section class="circulo __container">
-            <h3>Formulas para el circulo</h3>
-            <form action="">
-                <label for="InputCirculo">Escribe las medidas de tu triangulo:</label>
-                <input type="number" id="RadioCirculo" placeholder="Radio">
-                <div class="input__button">
-                    <button type="button" onclick="calcularDiametroCirculo()">Calcular diametro</button>
-                    <button type="button" onclick="calcularPerimetroCirculo()">Calcular perimetro</button>
-                    <button type="button" onclick="calcularAreaCirculo()">Calcular área</button>
-                </div>
-            </form>
-        </section>
-        <footer>
-            <h4>Hecho con 🎶 por @devnielote</h4>
+        <footer class="Footer" id="footer">
         </footer>
     </main>
-    <script src="../src/index.js"></script>
-</body>  
+    <script src="../src/utils/formulasGeometricas.js"></script>
+    <script src="../src/utils/descuentos.js"></script>
+    <script src="../src/utils/med,prom,mod.js"></script>
+    <script src="../src/utils/analisis.js"></script>
+    <script src="../src/utils/capacidadEndeudamiento.js"></script>
+</body>
 </html>

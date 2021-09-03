@@ -17,6 +17,27 @@
 //Utils
 
 //Lo chido, el jale, el objetive.
-const calcularCapacidadEndeudamiento = (ingresosTotales,gastosFijos,variables) => {
-    
+const calcularCapacidadEndeudamiento = () => {
+    const totalIncome = document.getElementById("InputIngresos").value;
+    const fixedExpends = document.getElementById("InputGastosFijos").value;
+    const variableExpends = document.getElementById("InputGastosVariables").value;
+    const results = document.getElementById("results");
+    const ahorros = document.getElementById("ahorro");
+    const err = document.getElementById("error")
+    if(variableExpends & fixedExpends & totalIncome){
+        err.style.display = "none";
+        results.style.display = "block";
+        ahorros.style.display = "block";
+        const expenses = Number(fixedExpends) + Number(variableExpends);
+        const result = (Number(totalIncome) - expenses) * 0.35;
+        const ahorro = (Number(totalIncome) - expenses) - result;
+        results.innerText = `Capacidad de pagos mensuales de: $${result}`
+        ahorros.innerText = `Porcentaje de ahorro de: $${ahorro}` 
+    } else {
+        err.style.display = "block";
+        err.style.color = "red";
+        results.style.display = "none";
+        ahorros.style.display = "none";
+        err.innerText = `Ingresa los valores que requeridos`
+    }
 }
